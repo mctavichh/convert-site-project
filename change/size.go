@@ -13,13 +13,11 @@ import (
 	"github.com/disintegration/imaging"
 )
 
-// job — одна картинка в очереди
 type job struct {
 	index int
 	file  *multipart.FileHeader
 }
 
-// result — готовый байткод или ошибка
 type result struct {
 	index int
 	data  []byte
